@@ -1,0 +1,107 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #1e1e1e;
+  padding: 10px 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-container a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.nav-container a:hover {
+  color: #00bcd4;
+}
+
+.center {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.profile-gif {
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skills-container, .projects-container, .certifications-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-card, .project-card, .cert-card {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.social-links a:nth-child(1) { background: #0077B5; } /* LinkedIn */
+.social-links a:nth-child(2) { background: #25D366; } /* WhatsApp */
+.social-links a:nth-child(3) { background: #D14836; } /* Gmail */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e1e1e;
+  margin-top: 20px;
+  color: #bbb;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .skills-container, .projects-container, .certifications-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
