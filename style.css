@@ -628,7 +628,6 @@ nav { position: relative; z-index: 1000; }
     .modal-layout { flex-direction: column; }
     .modal-iframe-container { flex: 1; height: 400px; }
 }
-
 @media (max-width: 768px) {
     .about-bio { flex-direction: column; }
     .about-headline h3 { font-size: 20px; }
@@ -650,28 +649,36 @@ nav { position: relative; z-index: 1000; }
     
     .skills-grid, .services-grid, .testimonials-grid, .certs-grid { grid-template-columns: 1fr; gap: 15px; }
     .contact-container { padding: 30px 20px; }
-    /* إظهار صندوق الاقتباسات وضبط مكانه على الموبايل */
+    
+    /* زر العودة للأعلى */
+    #back-to-top { bottom: 90px; left: 20px; }
+    body[lang="ar"] #back-to-top { right: 20px; left: auto; }
+    
+    /* صندوق الاقتباسات (تم التعديل لإجباره على الظهور) */
     .quote-widget-container { 
-        bottom: 90px; /* رفعه لأعلى قليلاً لعدم التعارض مع السوشيال ميديا */
-        right: 20px; 
-        display: flex !important; /* هذا السطر يجبر المتصفح على إظهاره */
+        bottom: 90px !important; 
+        right: 20px !important; 
+        display: flex !important; 
+        z-index: 99999 !important;
     }
     body[lang="ar"] .quote-widget-container { 
-        left: 20px; 
-        right: auto; 
+        left: 20px !important; 
+        right: auto !important; 
     }
-    
     .quote-popup { 
-        width: 280px; /* تصغير العرض قليلاً ليناسب شاشات الموبايل */
-        bottom: 60px; /* ضبط موقع النافذة فوق الزر */
+        width: 280px; 
+        bottom: 60px; 
     }
     body[lang="ar"] .quote-popup { 
         left: 0; 
         right: auto; 
         transform: translateX(-110%) scale(0.9);
     }
+    body[lang="ar"] .quote-popup.show {
+        transform: translateX(0) scale(1);
+    }
 
-    /* ضبط أزرار السوشيال ميديا في المنتصف بالأسفل */
+    /* السوشيال ميديا في الموبايل */
     .floating-socials { 
         display: flex; flex-direction: row; top: auto; 
         bottom: 20px; left: 50%; transform: translateX(-50%); 
@@ -680,6 +687,10 @@ nav { position: relative; z-index: 1000; }
         left: 50%; right: auto; transform: translateX(-50%); 
     }
     .social-icon:hover { transform: scale(1.2) translateY(-5px); }
+
+    /* سلايدر التقييمات */
+    .feedback-slider-container { height: 300px; }
+}
 
 /* =========================================
    Scroll Progress Bar
