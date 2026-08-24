@@ -776,3 +776,125 @@ body[lang="ar"] #back-to-top {
 .slider-nav:hover { transform: translateY(-50%) scale(1.1); }
 .slider-prev { left: 15px; }
 .slider-next { right: 15px; }
+/* =========================================
+   النسخة النهائية والمحسنة لصندوق الاقتباسات (مضمونة 100%)
+   ========================================= */
+.quote-widget-container {
+    position: fixed !important; 
+    bottom: 30px !important; 
+    right: 30px !important; 
+    z-index: 99999 !important; 
+    display: flex !important; 
+    flex-direction: column !important; 
+    align-items: flex-end !important;
+}
+body[lang="ar"] .quote-widget-container { 
+    right: auto !important; 
+    left: 30px !important; 
+    align-items: flex-start !important; 
+}
+
+/* زرار اللمبة */
+.toggle-quote-btn {
+    background: var(--main-gradient) !important; 
+    color: #fff !important; 
+    width: 55px !important; 
+    height: 55px !important; 
+    border-radius: 50% !important; 
+    border: none !important; 
+    cursor: pointer !important; 
+    box-shadow: var(--glow-shadow) !important; 
+    transition: all 0.3s ease !important; 
+    display: flex !important; 
+    justify-content: center !important; 
+    align-items: center !important; 
+    position: relative !important; 
+    z-index: 2 !important;
+}
+.toggle-quote-btn i { 
+    color: #fff !important; /* إجبار الأيقونة على الظهور باللون الأبيض */
+    font-size: 22px !important; 
+    display: block !important;
+}
+.toggle-quote-btn:hover { transform: scale(1.1) !important; }
+
+/* شكل الزرار لو تم إيقافه */
+.toggle-quote-btn.muted { 
+    background: var(--second-bg-color) !important; 
+    border: 2px solid var(--card-border) !important; 
+}
+.toggle-quote-btn.muted i { color: var(--text-muted) !important; }
+
+/* صندوق الاقتباسات نفسه */
+.quote-popup {
+    background: var(--second-bg-color) !important; 
+    border: 1px solid var(--card-border) !important; 
+    border-radius: 20px !important; 
+    padding: 25px !important; 
+    width: 350px !important; 
+    box-shadow: var(--glow-shadow) !important; 
+    position: absolute !important; 
+    bottom: 75px !important; 
+    right: 0 !important; 
+    opacity: 0 !important; 
+    visibility: hidden !important; 
+    transform: translateX(120%) scale(0.9) !important; 
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+    z-index: 1 !important;
+}
+body[lang="ar"] .quote-popup { 
+    right: auto !important; 
+    left: 0 !important; 
+    transform: translateX(-120%) scale(0.9) !important; 
+}
+
+/* حركة الدخول للشاشة (مهمة جداً) */
+.quote-widget-container .quote-popup.show,
+body[lang="ar"] .quote-widget-container .quote-popup.show { 
+    opacity: 1 !important; 
+    visibility: visible !important; 
+    transform: translateX(0) scale(1) !important; 
+}
+
+/* زر إغلاق الصندوق X */
+.close-quote-btn { 
+    position: absolute !important; 
+    top: 15px !important; 
+    right: 15px !important; 
+    background: transparent !important; 
+    border: none !important; 
+    color: var(--text-muted) !important; 
+    font-size: 24px !important; 
+    cursor: pointer !important; 
+    transition: 0.3s !important; 
+}
+body[lang="ar"] .close-quote-btn { right: auto !important; left: 15px !important; }
+.close-quote-btn:hover { color: var(--main-color) !important; }
+
+/* النصوص والأيقونات الداخلية */
+.quote-icon-popup { font-size: 25px !important; color: var(--main-color) !important; opacity: 0.5 !important; margin-bottom: 15px !important; display: block !important; }
+body[lang="ar"] .quote-icon-popup { transform: scaleX(-1) !important; }
+
+.popup-text { font-size: 15px !important; font-style: italic !important; color: var(--heading-color) !important; line-height: 1.6 !important; margin-bottom: 15px !important; }
+.popup-author { color: var(--main-color) !important; font-size: 14px !important; font-weight: 700 !important; margin-bottom: 15px !important; }
+.popup-example { padding-top: 15px !important; border-top: 1px solid var(--card-border) !important; font-size: 13.5px !important; color: var(--text-muted) !important; line-height: 1.6 !important; }
+.popup-example strong { color: var(--heading-color) !important; display: block !important; margin-bottom: 5px !important; }
+
+/* =========================================
+   تعديلات الموبايل لضبط المقاس والمكان
+   ========================================= */
+@media (max-width: 768px) {
+    .quote-widget-container { 
+        bottom: 90px !important; /* رفعه لعدم التعارض مع السوشيال ميديا */
+        right: 20px !important; 
+    }
+    body[lang="ar"] .quote-widget-container { 
+        left: 20px !important; 
+        right: auto !important; 
+    }
+    .quote-popup { 
+        width: 290px !important; /* تصغير العرض ليناسب شاشة الموبايل تماماً */
+        padding: 20px !important;
+        bottom: 70px !important;
+    }
+}
