@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Matter | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS for Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark" lang="en">
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Data Nodes Animation Background -->
+    <div id="particles-js"></div>
+
+    <!-- Floating Social Icons -->
+    <div class="floating-socials">
+        <a href="https://linkedin.com/in/ahmedmatter98" target="_blank" class="social-icon linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/AhmedMatter98" target="_blank" class="social-icon github" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/201228607239" target="_blank" class="social-icon whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/@Ahmed_Matter" target="_blank" class="social-icon youtube" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Ahmed<span> Matter</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="lang-en">Home</a><a href="#home" class="lang-ar">الرئيسية</a></li>
+            <li><a href="#about" class="lang-en">About</a><a href="#about" class="lang-ar">نبذة</a></li>
+            <li><a href="#services" class="lang-en">Services</a><a href="#services" class="lang-ar">خدماتي</a></li>
+            <li><a href="#skills" class="lang-en">Skills</a><a href="#skills" class="lang-ar">المهارات</a></li>
+            <li><a href="#projects" class="lang-en">Projects</a><a href="#projects" class="lang-ar">المشاريع</a></li>
+            <li><a href="#certificates" class="lang-en">Certificates</a><a href="#certificates" class="lang-ar">الشهادات</a></li>
+            <li><a href="#experience" class="lang-en">Experience</a><a href="#experience" class="lang-ar">الخبرات</a></li>
+            <li><a href="#contact" class="lang-en">Contact</a><a href="#contact" class="lang-ar">تواصل</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button id="theme-toggle" title="Toggle Theme"><i class="fas fa-moon"></i></button>
+            <button id="lang-toggle" title="تغيير اللغة">عربي</button>
+            <div class="menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <!-- Text Content -->
+        <div class="home-text" data-aos="fade-right">
+            <h3 class="lang-en">Hello, I'm</h3><h3 class="lang-ar">مرحباً، أنا</h3>
+            <h1>Ahmed Matter</h1>
+            <h3 class="typing-text"><span class="lang-en">I'm a </span><span class="lang-ar">أنا </span><span id="typewriter"></span></h3>
+            <p class="lang-en">Transforming complex financial and business data into actionable insights.</p>
+            <p class="lang-ar">تحويل البيانات المالية والتجارية المعقدة إلى رؤى قابلة للتنفيذ.</p>
+            
+            <div class="social-links">
+                <a href="https://linkedin.com/in/ahmedmatter98" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/AhmedMatter98" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:ahmedmatter.ba@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.youtube.com/@Ahmed_Matter" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <div class="btn-group">
+                <a href="docs/Ahmed_Matter_DataAnalyst.pdf" download class="btn">
+                    <span class="lang-en">Download CV</span><span class="lang-ar">تحميل السيرة الذاتية</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Profile Image -->
+        <div class="home-img" data-aos="fade-left">
+            <div class="img-box">
+                <img src="images/Matter.png" alt="Ahmed Matter">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="heading" data-aos="fade-up"><span class="lang-en">About <span>Me</span></span><span class="lang-ar">نبذة <span>عني</span></span></h2>
+        
+        <div class="about-container" data-aos="fade-up">
+            <div class="about-headline">
+                <h3 class="lang-en">"I transform raw data into clear, actionable insights that drive business growth and smart decisions."</h3>
+                <h3 class="lang-ar">"أقوم بتحويل البيانات الخام إلى رؤى واضحة وقابلة للتنفيذ تدفع نمو الأعمال وتدعم القرارات الذكية."</h3>
+            </div>
+
+            <div class="about-bio">
+                <div class="bio-block">
+                    <h4><i class="fas fa-user-tie"></i> <span class="lang-en">Who I Am</span><span class="lang-ar">من أنا</span></h4>
+                    <p class="lang-en">With a solid background combining accounting and data analytics, I help businesses make sense of their numbers. I specialize in building automated reporting systems and interactive dashboards that save time, reduce errors, and make decision-making much easier for management.</p>
+                    <p class="lang-ar">بخلفية قوية تجمع بين المحاسبة وتحليل البيانات، أساعد الشركات على فهم أرقامها بسهولة. أتخصص في بناء أنظمة تقارير مؤتمتة ولوحات تحكم تفاعلية توفر الوقت، وتقلل الأخطاء، وتجعل اتخاذ القرارات أسهل بكثير للإدارة.</p>
+                </div>
+                <div class="bio-block">
+                    <h4><i class="fas fa-laptop-code"></i> <span class="lang-en">What I Do</span><span class="lang-ar">ما اقدمه</span></h4>
+                    <p class="lang-en">I manage the entire data journey—from cleaning raw data to building advanced predictive models. My technical toolkit includes <span class="highlight">Excel, Power Query, SQL, Python, Power BI, Data Modeling, and Machine Learning (ML)</span>, allowing me to deliver complete, reliable, and high-quality data solutions.</p>
+                    <p class="lang-ar">أدير رحلة البيانات بالكامل؛ بدءاً من تنظيف البيانات الخام وصولاً إلى بناء نماذج تنبؤية متقدمة. أعتمد في عملي على أدوات مثل <span class="highlight">Excel, Power Query, SQL, Python, Power BI, Data Modeling, وتعلم الآلة (ML)</span> لتقديم حلول بيانات متكاملة وموثوقة.</p>
+                </div>
+            </div>
+
+            <div class="about-metrics">
+                <div class="metric-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3 class="lang-en"><span class="counter" data-target="15">0</span>+</h3>
+                    <h3 class="lang-ar">+<span class="counter" data-target="15">0</span></h3>
+                    <p class="lang-en">Data & BI Projects</p><p class="lang-ar">مشروع بيانات ولوحات تحكم</p>
+                </div>
+                <!-- كارت الشهادة معندوش رقم فسابوه زي ما هو -->
+                <div class="metric-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3 class="lang-en">Expert</h3><h3 class="lang-ar">خبير</h3>
+                    <p class="lang-en">Excel Trainer</p><p class="lang-ar">تدريب الاكسيل</p>
+                </div>
+                <div class="metric-card" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-bolt"></i>
+                    <h3 class="lang-en"><span class="counter" data-target="60">0</span>%</h3>
+                    <h3 class="lang-ar">%<span class="counter" data-target="60">0</span></h3>
+                    <p class="lang-en">Time Saved via Automation</p><p class="lang-ar">توفير للوقت عبر الأتمتة</p>
+                </div>
+                <div class="metric-card" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-briefcase"></i>
+                    <h3 class="lang-en"><span class="counter" data-target="3">0</span>+</h3>
+                    <h3 class="lang-ar">+<span class="counter" data-target="3">0</span></h3>
+                    <p class="lang-en">Years of Experience</p><p class="lang-ar">سنوات من الخبرة العملية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Clickable) -->
+    <section id="services" class="services">
+        <h2 class="heading" data-aos="fade-up"><span class="lang-en">My <span>Services</span></span><span class="lang-ar">أبرز <span>خدماتي</span></span></h2>
+        <div class="services-grid" data-aos="fade-up">
+            <div class="service-card clickable-service" 
+                 data-title-en="BI & Executive Dashboards" data-title-ar="لوحات تحكم ذكاء الأعمال"
+                 data-desc-en="I design interactive, real-time Power BI dashboards tailored to your business needs. This includes defining KPIs, integrating multiple data sources, and creating visually compelling reports that empower executives to make data-driven decisions swiftly." 
+                 data-desc-ar="أقوم بتصميم لوحات تحكم تفاعلية عبر Power BI مصممة خصيصاً لاحتياجات عملك. يشمل ذلك تحديد مؤشرات الأداء، ربط مصادر البيانات المتعددة، وإنشاء تقارير بصرية جذابة تمكن الإدارة من اتخاذ قرارات سريعة ومبنية على الأرقام.">
+                <i class="fas fa-chart-line"></i>
+                <h3 class="lang-en">BI & Executive Dashboards</h3><h3 class="lang-ar">لوحات تحكم ذكاء الأعمال</h3>
+                <p class="lang-en">Click for details...</p><p class="lang-ar">اضغط للتفاصيل...</p>
+            </div>
+
+            <div class="service-card clickable-service"
+                 data-title-en="Data Cleaning & ETL Pipelines" data-title-ar="هندسة وتنظيف البيانات (ETL)"
+                 data-desc-en="I build robust automated data pipelines using Power Query and SQL to extract messy data from ERPs or Excel files, clean it, and structure it into a Star Schema ready for advanced analysis." 
+                 data-desc-ar="أبني مسارات بيانات مؤتمتة وقوية باستخدام Power Query و SQL لاستخراج البيانات المعقدة من الأنظمة (ERPs) أو ملفات الإكسيل، وتنظيفها، وهيكلتها في نموذج (Star Schema) جاهز للتحليل المتقدم.">
+                <i class="fas fa-cogs"></i>
+                <h3 class="lang-en">Data Cleaning & ETL</h3><h3 class="lang-ar">هندسة وتنظيف البيانات</h3>
+                <p class="lang-en">Click for details...</p><p class="lang-ar">اضغط للتفاصيل...</p>
+            </div>
+
+            <div class="service-card clickable-service"
+                 data-title-en="Excel Automation" data-title-ar="أتمتة التقارير (Excel)"
+                 data-desc-en="Stop doing manual copy-pasting. I automate your monthly reporting using Advanced Excel functions and Power Query, saving your team hours of manual work." 
+                 data-desc-ar="توقف عن النسخ واللصق اليدوي. أقوم بأتمتة تقاريرك الشهرية باستخدام دوال الإكسيل المتقدمة، Power Query، مما يوفر على فريقك ساعات من العمل الشاق.">
+                <i class="fas fa-file-excel"></i>
+                <h3 class="lang-en">Excel Automation</h3><h3 class="lang-ar">أتمتة التقارير (Excel)</h3>
+                <p class="lang-en">Click for details...</p><p class="lang-ar">اضغط للتفاصيل...</p>
+            </div>
+
+            <div class="service-card clickable-service"
+                 data-title-en="Corporate Data Training" data-title-ar="التدريب المؤسسي لفرق العمل"
+                 data-desc-en="I offer customized, hands-on training sessions for your employees focusing on Excel Data Cleaning, Reporting Automation, and building Dashboards in Power BI to elevate your team's productivity." 
+                 data-desc-ar="أقدم دورات تدريبية عملية ومخصصة لموظفيك تركز على تنظيف البيانات في الإكسيل، أتمتة التقارير، وبناء لوحات التحكم في Power BI لرفع إنتاجية فريق عملك بالكامل.">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3 class="lang-en">Corporate Training</h3><h3 class="lang-ar">التدريب المؤسسي</h3>
+                <p class="lang-en">Click for details...</p><p class="lang-ar">اضغط للتفاصيل...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="heading" data-aos="fade-up"><span class="lang-en">My <span>Skills</span></span><span class="lang-ar">أهم <span>مهاراتي</span></span></h2>
+        
+        <div class="skills-grid" data-aos="fade-up">
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+                <div class="skill-info">
+                    <h4>Excel</h4>
+                    <p class="lang-en">Advanced Functions & VBA Automation</p>
+                    <p class="lang-ar">دوال متقدمة وأتمتة باستخدام VBA</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-filter"></i></div>
+                <div class="skill-info">
+                    <h4>Power Query</h4>
+                    <p class="lang-en">Data Cleaning, Transformation & ETL</p>
+                    <p class="lang-ar">تنظيف وتحويل البيانات (ETL)</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <div class="skill-info">
+                    <h4>SQL</h4>
+                    <p class="lang-en">Complex Querying & Database Management</p>
+                    <p class="lang-ar">استعلامات معقدة وإدارة قواعد البيانات</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                <div class="skill-info">
+                    <h4>Python</h4>
+                    <p class="lang-en">Pandas, NumPy & Advanced Analysis</p>
+                    <p class="lang-ar">تحليل متقدم باستخدام Pandas و NumPy</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                <div class="skill-info">
+                    <h4>Power BI</h4>
+                    <p class="lang-en">Interactive Dashboards & DAX Measures</p>
+                    <p class="lang-ar">لوحات تفاعلية ومقاييس DAX</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                <div class="skill-info">
+                    <h4>Data Modeling</h4>
+                    <p class="lang-en">Relational Design & Star Schema</p>
+                    <p class="lang-ar">تصميم العلاقات ونموذج Star Schema</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                <div class="skill-info">
+                    <h4>Machine Learning</h4>
+                    <p class="lang-en">Predictive Models & Statistical Analysis</p>
+                    <p class="lang-ar">النماذج التنبؤية والتحليل الإحصائي</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                <div class="skill-info">
+                    <h4>Automation</h4>
+                    <p class="lang-en">Workflow Optimization & Reporting</p>
+                    <p class="lang-ar">تحسين تدفقات العمل وأتمتة التقارير</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="heading" data-aos="fade-up"><span class="lang-en">My <span>Projects</span></span><span class="lang-ar">أهم <span>مشاريعي</span></span></h2>
+        
+        <div class="filter-buttons" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="powerbi">Power BI</button>
+            <button class="filter-btn" data-filter="python">Python</button>
+            <button class="filter-btn" data-filter="excel">Excel</button>
+            <button class="filter-btn" data-filter="sql">SQL/MySQL</button>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Power BI Project 1-->
+            <div class="project-card" data-category="powerbi" data-aos="zoom-in">
+                <div class="card-img">
+                    <img src="images/projects/Superstoresales.jpg" alt="KPI Dashboard">
+                    <button class="open-dashboard-btn" data-embed="https://app.powerbi.com/view?r=eyJrIjoiNGEwNTUwYjUtYjgwYS00YTI4LTgyMGYtOWRjM2VhMTdlY2E3IiwidCI6IjhmY2Y0Y2Q5LTJmZTQtNDU3MS04NDMxLWIxN2MzZjI5ZWZiMyJ9"
+                        data-title-en="Super Store Sales Analytics" data-title-ar="تحليلات مبيعات المتجر الكبير"
+                        data-prob-en="Lack of clear visibility into which product categories and regions were driving profit losses." data-prob-ar="انعدام الرؤية الواضحة لتحديد فئات المنتجات والمناطق التي تسبب خسائر في الأرباح."
+                        data-sol-en="Designed a comprehensive Power BI dashboard integrating complex sales metrics using DAX." data-sol-ar="تصميم لوحة تحكم شاملة عبر Power BI تدمج مقاييس المبيعات المعقدة باستخدام DAX."
+                        data-imp-en="Enabled management to instantly identify unprofitable regions and adjust pricing strategies." data-imp-ar="تمكين الإدارة من التحديد الفوري للمناطق غير المربحة وتعديل استراتيجيات التسعير.">
+                        <i class="fas fa-external-link-alt"></i> <span class="lang-en">View Case Study</span><span class="lang-ar">دراسة الحالة</span>
+                    </button>
+                </div>
+                <div class="project-info">
+                    <h3>Super Store Sales - Dashboard</h3>
+                    <p class="lang-en">interactive dashboard developed to analyze sales and profit performance for a retail store.</p>
+                    <p class="lang-ar">لوحة تحكم تفاعلية متكاملة تم تطويرها لتحليل أداء المبيعات والأرباح لمتجر تجاري</p>
+                    <span class="tag">Power BI</span> <span class="tag">DAX</span> <span class="tag">Power Query</span> <span class="tag">Data Modeling</span> <span class="tag">Dashboard Design</span> <span class="tag">Data Visualization</span> <span class="tag">Star Schema</span>
+                </div>
+            </div>
+            
+            <!-- Power BI Project 2-->
+            <div class="project-card" data-category="powerbi sql" data-aos="zoom-in">
+                <div class="card-img">
+                    <img src="images/projects/ecommercemaven.png" alt="KPI Dashboard">
+                    <button class="open-dashboard-btn" data-embed="https://app.powerbi.com/view?r=eyJrIjoiNTlhMDVmNWMtODU2Yi00MzY2LTk5Y2UtNWZhNGI3OTdiN2M0IiwidCI6IjhmY2Y0Y2Q5LTJmZTQtNDU3MS04NDMxLWIxN2MzZjI5ZWZiMyJ9"
+                        data-title-en="E-commerce Conversion Analytics" data-title-ar="تحليلات معدل تحويل التجارة الإلكترونية"
+                        data-prob-en="Difficulty in tracking customer drop-off rates across the 473K session checkout funnel." data-prob-ar="صعوبة تتبع معدلات تسرب العملاء عبر مسار المبيعات الذي يضم 473 ألف زيارة."
+                        data-sol-en="Built an ETL pipeline from MySQL to Power BI, creating a visual conversion funnel." data-sol-ar="بناء مسار بيانات من MySQL إلى Power BI، وإنشاء مسار تحويل مرئي (Funnel)."
+                        data-imp-en="Identified exact friction points, improving the overall 6.8% conversion rate understanding." data-imp-ar="تحديد نقاط الاحتكاك الدقيقة، مما حسّن فهم معدل التحويل الإجمالي البالغ 6.8%.">
+                        <i class="fas fa-external-link-alt"></i> <span class="lang-en">View Case Study</span><span class="lang-ar">دراسة الحالة</span>
+                    </button>
+                </div>
+                <div class="project-info">
+                    <h3>E-commerce Conversion Analytics</h3>
+                    <p class="lang-en">Analyzed full customer journey from 473K sessions to 32K orders.</p>
+                    <p class="lang-ar">تحليل شامل لرحلة العميل عبر 473 ألف زيارة وتحقيق 32 ألف طلب.</p>
+                    <span class="tag">Power BI</span> <span class="tag">DAX</span> <span class="tag">Power Query</span> <span class="tag">Data Modeling</span> <span class="tag">Dashboard Design</span> <span class="tag">Data Visualization</span> <span class="tag">Star Schema</span> <span class="tag">MySql</span>
+                </div>
+            </div>
+            
+            <!-- Power BI Project 3-->
+            <div class="project-card" data-category="powerbi" data-aos="zoom-in">
+                <div class="card-img">
+                    <img src="images/projects/FinancialDashboard.png" alt="KPI Dashboard">
+                    <button class="open-dashboard-btn" data-embed="https://app.powerbi.com/view?r=eyJrIjoiZGY4ZTAzYzgtOTE1Mi00ZGI1LTg4NzEtMjI3ODc3NzUxZDE1IiwidCI6IjhmY2Y0Y2Q5LTJmZTQtNDU3MS04NDMxLWIxN2MzZjI5ZWZiMyJ9"
+                        data-title-en="Automated Financial Statements" data-title-ar="أتمتة القوائم المالية"
+                        data-prob-en="Manual preparation of Balance Sheets and Income Statements caused reporting delays." data-prob-ar="الإعداد اليدوي للميزانية وقائمة الدخل كان يسبب تأخيراً في إعداد التقارير."
+                        data-sol-en="Engineered automated data models and advanced DAX formulas to map accounting metrics." data-sol-ar="هندسة نماذج بيانات مؤتمتة ومعادلات DAX متقدمة لربط المقاييس المحاسبية."
+                        data-imp-en="Reduced financial reporting time drastically and minimized human error in balance calculations." data-imp-ar="تقليل وقت إعداد التقارير المالية بشكل جذري وتقليل الأخطاء البشرية في الحسابات.">
+                        <i class="fas fa-external-link-alt"></i> <span class="lang-en">View Case Study</span><span class="lang-ar">دراسة الحالة</span>
+                    </button>
+                </div>
+                <div class="project-info">
+                    <h3>Automated Financial Statements</h3>
+                    <p class="lang-en">Developed automated dashboards for Balance Sheet and Income Statement analysis.</p>
+                    <p class="lang-ar">أتمتة وتطوير لوحات تحكم مالية لتحليل أداء الميزانية وقائمة الدخل</p>
+                    <span class="tag">Power BI</span> <span class="tag">DAX</span> <span class="tag">Power Query</span> <span class="tag">Data Modeling</span> <span class="tag">Dashboard Design</span> <span class="tag">Data Visualization</span> <span class="tag">Star Schema</span> <span class="tag">Financial Modeling</span>
+                </div>
+            </div>
+            
+            <!-- Power BI Project 4-->
+            <div class="project-card" data-category="powerbi" data-aos="zoom-in">
+                <div class="card-img">
+                    <img src="images/projects/LoanRisk.png" alt="KPI Dashboard">
+                    <button class="open-dashboard-btn" data-embed="https://app.powerbi.com/view?r=eyJrIjoiNDU2MTE3MzQtMzQ5Yy00MDc1LThjZGEtYzdiZjIxN2QxZmYzIiwidCI6IjhmY2Y0Y2Q5LTJmZTQtNDU3MS04NDMxLWIxN2MzZjI5ZWZiMyJ9"
+                        data-title-en="Banking Risk Analytics" data-title-ar="تحليلات المخاطر البنكية"
+                        data-prob-en="Inability to accurately segment high-risk clients within the credit portfolio." data-prob-ar="عدم القدرة على تصنيف العملاء ذوي المخاطر العالية بدقة ضمن المحفظة الائتمانية."
+                        data-sol-en="Developed a customer segmentation model integrating UI features like dynamic filter panes." data-sol-ar="تطوير نموذج لتصنيف العملاء مع دمج ميزات واجهة مستخدم مثل شريط التصفية الديناميكي."
+                        data-imp-en="Provided executives with interactive insights to mitigate potential default risks." data-imp-ar="تزويد الإدارة برؤى تفاعلية للحد من مخاطر التخلف عن السداد المحتملة.">
+                        <i class="fas fa-external-link-alt"></i> <span class="lang-en">View Case Study</span><span class="lang-ar">دراسة الحالة</span>
+                    </button>
+                </div>
+                <div class="project-info">
+                    <h3>Banking Risk & Credit Analytics</h3>
+                    <p class="lang-en">Customer segmentation analytics using credit data, enhanced by dynamic filter panes.</p>
+                    <p class="lang-ar">لوحة تحكم لتقسيم العملاء بناءً على سلوك الإنفاق وتتميز بشريط تصفية جانبي مخصص.</p>
+                    <span class="tag">Power BI</span> <span class="tag">DAX</span> <span class="tag">Power Query</span> <span class="tag">Data Modeling</span> <span class="tag">Data Visualization</span> <span class="tag">Star Schema</span> <span class="tag">Dashboard Design</span> <span class="tag">UI/UX</span>
+                </div>
+            </div>
+            
+            <!-- Power BI Project 5-->
+            <div class="project-card" data-category="powerbi sql" data-aos="zoom-in">
+                <div class="card-img">
+                    <img src="images/projects/Realestate.png" alt="KPI Dashboard">
+                    <button class="open-dashboard-btn" data-embed="https://app.powerbi.com/view?r=eyJrIjoiNDY3OWM3MTMtZTY1MS00NjNhLTk0YzQtOGVhOTdjZjIxYzU4IiwidCI6IjhmY2Y0Y2Q5LTJmZTQtNDU3MS04NDMxLWIxN2MzZjI5ZWZiMyJ9"
+                        data-title-en="Real Estate Price Analytics" data-title-ar="تحليلات أسعار العقارات"
+                        data-prob-en="Dispersed market data made it hard to track real estate price trends and conversions." data-prob-ar="تشتت بيانات السوق جعل من الصعب تتبع اتجاهات أسعار العقارات ومعدلات التحويل."
+                        data-sol-en="Built ETL pipelines using Azure SQL and Power Query for advanced EDA." data-sol-ar="بناء مسارات بيانات باستخدام Azure SQL و Power Query للتحليل الاستكشافي المتقدم."
+                        data-imp-en="Streamlined data analysis resulting in clear tracking of 40% conversion rates." data-imp-ar="تبسيط تحليل البيانات مما أدى إلى تتبع واضح لمعدلات التحويل البالغة 40%.">
+                        <i class="fas fa-external-link-alt"></i> <span class="lang-en">View Case Study</span><span class="lang-ar">دراسة الحالة</span>
+                    </button>
+                </div>
+                <div class="project-info">
+                    <h3>Real Estate Price Analytics Dashboard</h3>
+                    <p class="lang-en">Built automated ETL pipelines and performed EDA using Azure SQL and Power Query.</p>
+                    <p class="lang-ar">تحليل استكشافي باستخدام Azure SQL وPower Query لبناء لوحات تتبع التحويل.</p>
+                    <span class="tag">SQL Server</span> <span class="tag">Power BI</span> <span class="tag">DAX</span> <span class="tag">Power Query</span> <span class="tag">Data Modeling</span> <span class="tag">Dashboard Design</span> <span class="tag">Data Visualization</span> <span class="tag">Star Schema</span>
+                </div>
+            </div>
+            
+            <!-- Power BI Project 6-->
+            <div class="project-card" data-category="powerbi" data-aos="zoom-in">
+                <div class="card-img">
+                    <img src="images/projects/Airline.png" alt="KPI Dashboard">
+                    <button class="open-dashboard-btn" data-embed="https://app.powerbi.com/view?r=eyJrIjoiZDJjOGJhNWEtNDg1ZS00NmMyLWE2YmYtMDFkMjlhNzViMDE1IiwidCI6IjhmY2Y0Y2Q5LTJmZTQtNDU3MS04NDMxLWIxN2MzZjI5ZWZiMyJ9"
+                        data-title-en="Flight Operations Analytics" data-title-ar="تحليلات عمليات الطيران"
+                        data-prob-en="Operational bottlenecks leading to unexplained flight delays across 321 airports." data-prob-ar="اختناقات تشغيلية تؤدي إلى تأخيرات غير مبررة للرحلات الجوية عبر 321 مطاراً."
+                        data-sol-en="Analyzed 275K+ flights using DAX time-series to model cancellation patterns." data-sol-ar="تحليل أكثر من 275 ألف رحلة باستخدام سلاسل DAX الزمنية لنمذجة أنماط الإلغاء."
+                        data-imp-en="Successfully isolated patterns, pinpointing an average 35.5-minute arrival delay." data-imp-ar="عزل الأنماط بنجاح، وتحديد متوسط تأخير الوصول بـ 35.5 دقيقة لعمل خطط التحسين.">
+                        <i class="fas fa-external-link-alt"></i> <span class="lang-en">View Case Study</span><span class="lang-ar">دراسة الحالة</span>
+                    </button>
+                </div>
+                <div class="project-info">
+                    <h3>Flight Operations & Delay Analytics</h3>
+                    <p class="lang-en">Analyzed 275K+ flights using Power Query ETL to model operational bottlenecks.</p>
+                    <p class="lang-ar">تحليل أكثر من 275 ألف رحلة طيران لتحديد الاختناقات التشغيلية للرحلات المتأخرة.</p>
+                    <span class="tag">Power BI</span> <span class="tag">DAX</span> <span class="tag">Power Query</span> <span class="tag">Data Modeling</span> <span class="tag">Dashboard Design</span> <span class="tag">Data Visualization</span> <span class="tag">Star Schema</span>
+                </div>
+            </div>
+            
+            <!-- Power BI Project 7-->
+            <div class="project-card" data-category="powerbi" data-aos="zoom-in">
+                <div class="card-img">
+                    <img src="images/projects/SalesDashboard.png" alt="KPI Dashboard">
+                    <button class="open-dashboard-btn" data-embed="https://app.powerbi.com/view?r=eyJrIjoiYjY0OGMxZmUtOTVhNi00OGRjLTgzYTctOTU0YjMzODkzZmY1IiwidCI6IjhmY2Y0Y2Q5LTJmZTQtNDU3MS04NDMxLWIxN2MzZjI5ZWZiMyJ9"
+                        data-title-en="Executive Sales Dashboard" data-title-ar="لوحة المبيعات التنفيذية"
+                        data-prob-en="Executives needed a high-level, real-time overview of massive sales volumes." data-prob-ar="المديرون التنفيذيون يحتاجون إلى نظرة عامة شاملة وفورية لحجم المبيعات الضخم."
+                        data-sol-en="Designed a robust BI dashboard handling $216M in revenue with dynamic trends." data-sol-ar="تصميم لوحة تحكم قوية تتعامل مع 216 مليون دولار من الإيرادات ذات اتجاهات ديناميكية."
+                        data-imp-en="Delivered instant insights into top customer contributions and sales channels." data-imp-ar="تقديم رؤى فورية حول مساهمات كبار العملاء وأداء قنوات البيع لدعم القرارات.">
+                        <i class="fas fa-external-link-alt"></i> <span class="lang-en">View Case Study</span><span class="lang-ar">دراسة الحالة</span>
+                    </button>
+                </div>
+                <div class="project-info">
+                    <h3>Executive Sales Performance</h3>
+                    <p class="lang-en">Dashboard analyzing $216M in revenue, featuring dynamic time-intelligence trends.</p>
+                    <p class="lang-ar">لوحة تحكم تفاعلية لتحليل مبيعات إجمالية بقيمة 216 مليون دولار.</p>
+                    <span class="tag">Power BI</span> <span class="tag">DAX</span> <span class="tag">Power Query</span> <span class="tag">Data Modeling</span> <span class="tag">Dashboard Design</span> <span class="tag">Data Visualization</span> <span class="tag">Star Schema</span> <span class="tag">Interactive Reporting</span>
+                </div>
+            </div>
+
+            <!-- Python Project -->
+            <div class="project-card" data-category="python" data-aos="zoom-in">
+                <div class="card-img">
+                    <img src="images/projects/titanic_project.png" alt="Titanic Survival">
+                    <a href="https://github.com/AhmedMatter98/Ahmed_Matter_ML_classification_Titanic/blob/main/Ahmed_Matter_ML_classification_Titanic.ipynb" target="_blank" class="github-link-btn">
+                        <i class="fab fa-github"></i> <span class="lang-en">View Code</span><span class="lang-ar">عرض الكود</span>
+                    </a>
+                </div>
+                <div class="project-info">
+                    <h3>Titanic Survival Prediction</h3>
+                    <p class="lang-en">End-to-End machine learning pipeline to predict passenger survival.</p>
+                    <p class="lang-ar">نموذج تعلم آلي متكامل للتنبؤ بنجاة الركاب.</p>
+                    <span class="tag">Python</span> <span class="tag">Scikit-Learn</span> <span class="tag">Pandas</span> <span class="tag">Jupyter Notebooks</span> <span class="tag">Exploratory Data Analysis (EDA)</span>
+                </div>
+            </div>
+
+<!-- Excel Project: Customer Churn -->
+            <div class="project-card" data-category="excel" data-aos="zoom-in">
+                <div class="card-img">
+                    <img src="images/projects/ChurnDashboard.png" alt="Churn Analysis Dashboard">
+                    
+                    <!-- الزر المحدث لفتح دراسة الحالة مع إمكانية التحميل -->
+                    <button class="open-dashboard-btn" 
+                        data-images="images/projects/ChurnDashboard.png, images/projects/Data Modeling.png" 
+                        data-title-en="Customer Churn Analysis | Telecom" data-title-ar="تحليل تسرب عملاء الاتصالات"
+                        data-prob-en="High customer churn rate (27%) without clear visibility into the underlying causes related to demographics or services." 
+                        data-prob-ar="ارتفاع معدل تسرب العملاء (27%) دون رؤية واضحة للأسباب الجذرية المتعلقة بالتركيبة السكانية أو الخدمات المقدمة."
+                        data-sol-en="Developed an interactive Excel dashboard using Power Query and Power Pivot (DAX) to analyze churn drivers." 
+                        data-sol-ar="تطوير لوحة تحكم تفاعلية على الإكسيل باستخدام Power Query و Power Pivot (DAX) لتحليل دوافع التسرب."
+                        data-imp-en="Identified key churn factors, enabling targeted retention strategies to reduce the churn rate." 
+                        data-imp-ar="تحديد العوامل الرئيسية للتسرب، مما مكن من وضع استراتيجيات استبقاء موجهة لتقليل معدل التسرب.">
+                        <i class="fas fa-images"></i> <span class="lang-en">View Case Study</span><span class="lang-ar">دراسة الحالة</span>
+                    </button>
+                    
+                </div>
+                <div class="project-info">
+                    <h3>Customer Churn Analysis | Telecom</h3>
+                    <p class="lang-en">Analyzed telecom customer churn using Power Query and Power Pivot (DAX).</p>
+                    <p class="lang-ar">تحليل تسرب عملاء شركة الاتصالات لتحديد معدل فقدان بلغ 27% باستخدام الإكسيل.</p>
+                    <span class="tag">PowerPivot</span> <span class="tag">Power Query</span> <span class="tag">Advanced Excel</span> <span class="tag">Pivot Tables</span> <span class="tag">Data Cleaning</span> <span class="tag">Conditional Formatting</span> <span class="tag">Excel Dashboards</span>
+                </div>
+            </div>
+            <!-- Excel P&L Dynamic Model -->
+            <div class="project-card" data-category="excel" data-aos="zoom-in">
+                <div class="card-img">
+                    <img src="images/projects/PLExcel.png" alt="Dynamic P&L Model">
+                    <!-- لاحظ استخدام data-images بدلاً من data-embed -->
+                    <button class="open-dashboard-btn" 
+                        data-images="images/projects/PLExcel.png, images/projects/PLAnalysiExcel.png"
+                        data-title-en="Dynamic P&L & Variance Analysis" data-title-ar="نموذج الأرباح والخسائر الديناميكي"
+                        data-prob-en="Manual preparation of monthly P&L statements and comparing Actuals vs. Budget across periods was time-consuming and prone to human error." 
+                        data-prob-ar="الإعداد اليدوي لتقارير الأرباح والخسائر الشهرية ومقارنة الفعلي بالموازنة كان يستهلك الكثير من الوقت ومعرضاً للأخطاء البشرية."
+                        data-sol-en="Engineered a fully automated Excel model integrating dynamic variance analysis, YTD calculations, and automated conditional highlighting." 
+                        data-sol-ar="تصميم نموذج إكسيل مؤتمت بالكامل يدمج تحليل الانحرافات، حسابات العام حتى تاريخه (YTD)، والتنسيق التلقائي للمتغيرات."
+                        data-imp-en="Saved hours of manual data entry while providing management with instant, error-free financial visibility." 
+                        data-imp-ar="توفير ساعات من إدخال البيانات اليدوي مع تزويد الإدارة برؤية مالية فورية ودقيقة لقرارات سريعة.">
+                        <i class="fas fa-images"></i> <span class="lang-en">View Case Study</span><span class="lang-ar">دراسة الحالة</span>
+                    </button>
+                </div>
+                <div class="project-info">
+                    <h3>Dynamic P&L & Variance Analysis</h3>
+                    <p class="lang-en">Automated Excel model for monthly P&L, YTD analysis, and Budget vs. Actuals tracking.</p>
+                    <p class="lang-ar">نموذج إكسيل مؤتمت لتحليل الأرباح والخسائر، وحسابات YTD، وتتبع الموازنة مقابل الفعلي.</p>
+                    <span class="tag">PowerPivot</span> <span class="tag">Power Query</span> <span class="tag">Advanced Excel</span> <span class="tag">Pivot Tables</span> <span class="tag">Data Cleaning</span> <span class="tag">Conditional Formatting</span> <span class="tag">Excel Dashboards</span> <span class="tag">Financial Modeling</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates & Continuous Development Section -->
+    <section id="certificates" class="certificates">
+        <h2 class="heading" data-aos="fade-up">
+            <span class="lang-en">Certificates & <span>Development</span></span>
+            <span class="lang-ar">الشهادات و <span>التطوير المهني</span></span>
+        </h2>
+        
+        <div class="certs-grid" data-aos="fade-up">
+            
+            <div class="cert-card">
+                <div class="cert-img"><img src="images/certificates/BICertificate.jpeg" alt="Certificate"></div>
+                <div class="cert-info">
+                    <span class="cert-issuer">Corporate Finance Institute (CFI)</span>
+                    <h3>BI Essentials for Finance Analysts</h3>
+                    <p class="lang-en">Gained advanced expertise in financial statement analysis, corporate valuation, and financial modeling.</p>
+                    <p class="lang-ar">إتقان تحليل القوائم المالية، تقييم الشركات، وبناء النماذج المالية المتقدمة.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/B9RFZ6Q6533C" target="_blank" class="cert-btn"><i class="fas fa-certificate"></i> <span class="lang-en">View Certificate</span><span class="lang-ar">عرض الشهادة</span></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-img"><img src="images/certificates/DatabaseCertificate.jpeg" alt="Certificate"></div>
+                <div class="cert-info">
+                    <span class="cert-issuer">Meta</span>
+                    <h3>Introduction to Databases</h3>
+                    <p class="lang-en">Concepts and principles that underpin how databases work.</p>
+                    <p class="lang-ar">المفاهيم والمبادئ التي تقوم عليها آلية عمل قواعد البيانات.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/SFFQ8H9NSGJJ" target="_blank" class="cert-btn"><i class="fas fa-certificate"></i> <span class="lang-en">View Certificate</span><span class="lang-ar">عرض الشهادة</span></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-img"><img src="images/certificates/SQLCFI.jpeg" alt="Certificate"></div>
+                <div class="cert-info">
+                    <span class="cert-issuer">Corporate Finance Institute (CFI)</span>
+                    <h3>SQL Fundamentals for Data Analysts</h3>
+                    <p class="lang-en">Validates proficiency in querying, extracting, and manipulating relational databases to transform raw data.</p>
+                    <p class="lang-ar">شهادة متخصصة في أساسيات لغة SQL وتغطي كيفية استخراج وتنظيم البيانات الخام إلى رؤى عملية.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/TVWJ4OAELF7G" target="_blank" class="cert-btn"><i class="fas fa-certificate"></i> <span class="lang-en">View Certificate</span><span class="lang-ar">عرض الشهادة</span></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-img"><img src="images/certificates/EducbaPython.png" alt="Certificate"></div>
+                <div class="cert-info">
+                    <span class="cert-issuer">Educba</span>
+                    <h3>NumPy & Pandas: Analyze & Transform Data</h3>
+                    <p class="lang-en">Focused on numerical operations, memory optimization, and cleaning Pandas DataFrames effectively.</p>
+                    <p class="lang-ar">التركيز على العمليات الرقمية ومعالجة البيانات باستخدام مكتبات بايثون بكفاءة.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/OTSVNE5ZLVOL" target="_blank" class="cert-btn"><i class="fas fa-certificate"></i> <span class="lang-en">View Certificate</span><span class="lang-ar">عرض الشهادة</span></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-img"><img src="images/certificates/Data AnalysisandVisualizationPython.jpeg" alt="Certificate"></div>
+                <div class="cert-info">
+                    <span class="cert-issuer">IBM</span>
+                    <h3>Data Visualization with Python</h3>
+                    <p class="lang-en">Implement data visualization techniques using Matplotlib, Seaborn, and Folium to tell a stimulating story.</p>
+                    <p class="lang-ar">بناء وتصميم الرسوم البيانية التفاعلية بلغة Python لعرض نتائج تحليل البيانات بأسلوب مؤثر.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/KDDMDIKLNOYX" target="_blank" class="cert-btn"><i class="fas fa-certificate"></i> <span class="lang-en">View Certificate</span><span class="lang-ar">عرض الشهادة</span></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-img"><img src="images/certificates/MLPython.png" alt="Certificate"></div>
+                <div class="cert-info">
+                    <span class="cert-issuer">IBM</span>
+                    <h3>Machine Learning with Python</h3>
+                    <p class="lang-en">Explain key concepts, tools, and roles involved in machine learning, including supervised learning.</p>
+                    <p class="lang-ar">تغطية شاملة لمبادئ تعلم الآلة وتقنيات التعلم الموجه وغير الموجه.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/S7OJ5BYAY9FK" target="_blank" class="cert-btn"><i class="fas fa-certificate"></i> <span class="lang-en">View Certificate</span><span class="lang-ar">عرض الشهادة</span></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-img"><img src="images/certificates/ETLPowerBI.jpeg" alt="Certificate"></div>
+                <div class="cert-info">
+                    <span class="cert-issuer">Microsoft</span>
+                    <h3>Extract, Transform and Load in Power BI</h3>
+                    <p class="lang-en">Configuring data sources, cleaning data for modeling, and managing queries via Advanced Editor.</p>
+                    <p class="lang-ar">تجهيز مصادر البيانات وتنظيفها وتعديل الأكواد عبر المحرر المتقدم في Power BI.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/ZMQDH969XP9Z" target="_blank" class="cert-btn"><i class="fas fa-certificate"></i> <span class="lang-en">View Certificate</span><span class="lang-ar">عرض الشهادة</span></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-img"><img src="images/certificates/MechiganPython.png" alt="Certificate"></div>
+                <div class="cert-info">
+                    <span class="cert-issuer">University of Michigan</span>
+                    <h3>Programming for Everybody (Python)</h3>
+                    <p class="lang-en">Foundations of programming, data structures, and automation using Python.</p>
+                    <p class="lang-ar">أساسيات البرمجة، هياكل البيانات، والأتمتة باستخدام لغة بايثون.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/BHZKJODXMYXM" target="_blank" class="cert-btn"><i class="fas fa-certificate"></i> <span class="lang-en">View Certificate</span><span class="lang-ar">عرض الشهادة</span></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-img"><img src="images/certificates/Data AnalysisandVisualizationPowerBI.jpeg" alt="Certificate"></div>
+                <div class="cert-info">
+                    <span class="cert-issuer">Microsoft</span>
+                    <h3>Data Analysis and Visualization</h3>
+                    <p class="lang-en">Designing accessible dashboards and seamlessly integrating effective visualizations.</p>
+                    <p class="lang-ar">تصميم تقارير ولوحات قيادة شمولية وتوظيفها بفاعلية لتحليل البيانات واستخلاص الرؤى.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/S6SVTWH05ZD0" target="_blank" class="cert-btn"><i class="fas fa-certificate"></i> <span class="lang-en">View Certificate</span><span class="lang-ar">عرض الشهادة</span></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-img"><img src="images/certificates/UdacityCertificate.jpg" alt="Certificate"></div>
+                <div class="cert-info">
+                    <span class="cert-issuer">Udacity</span>
+                    <h3>Data Analysis Challenger Track</h3>
+                    <p class="lang-en">Practical problem-solving, data cleaning workflows, and visualization fundamentals.</p>
+                    <p class="lang-ar">حل المشكلات العملية، مسارات عمل تنظيف البيانات، وأساسيات التصور البصري.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="timeline-section">
+        <h2 class="heading" data-aos="fade-up"><span class="lang-en">Experience & <span>Education</span></span><span class="lang-ar">الخبرات و <span>التعليم</span></span></h2>
+        <div class="timeline">
+            
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Freelance BI Developer & Instructor</h3>
+                    <span>May 2023 - Present</span>
+                    <ul class="timeline-list lang-en">
+                        <li>Developed interactive Power BI dashboards for finance, sales, churn, and risk analysis.</li>
+                        <li>Automated reporting workflows for SMEs using Power Query and Excel, saving 60% of manual time.</li>
+                        <li>Built end-to-end BI solutions including ETL pipelines and Star Schema data modeling.</li>
+                    </ul>
+                    <ul class="timeline-list lang-ar">
+                        <li>تطوير لوحات تحكم تفاعلية عبر Power BI لتحليل القطاع المالي، المبيعات، وتسرب العملاء.</li>
+                        <li>أتمتة تدفقات عمل التقارير للشركات باستخدام Power Query و Excel، مما وفر 60% من الوقت اليدوي.</li>
+                        <li>بناء حلول ذكاء أعمال متكاملة تشمل عمليات (ETL) ونمذجة البيانات (Star Schema).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Accountant | Canal Company For Electricity</h3>
+                    <span>Mar 2023 - Apr 2026</span>
+                    <ul class="timeline-list lang-en">
+                        <li>Engineered financial systems and document cycles using Advanced Excel & VBA.</li>
+                        <li>Developed automated tools with Power Query & VBA to reconcile monthly subscriptions & loans.</li>
+                        <li>Engineered periodic financial investment reports ensuring FRA compliance.</li>
+                        <li>Managed financial reporting (P&L, Balance Sheets) and automated bank reconciliations.</li>
+                    </ul>
+                    <ul class="timeline-list lang-ar">
+                        <li>هندسة النظم المالية والدورة المستندية باستخدام الإكسيل المتقدم و VBA.</li>
+                        <li>تطوير أدوات مؤتمتة عبر Power Query و VBA لتسوية الاشتراكات والقروض الشهرية.</li>
+                        <li>إعداد تقارير الاستثمار المالي الدورية لضمان التوافق مع متطلبات هيئة الرقابة المالية (FRA).</li>
+                        <li>إدارة التقارير المالية (قائمة الدخل، الميزانية) وأتمتة التسويات البنكية.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Business Analytics Diploma</h3>
+                    <span>DEBI, MCIT Egypt (Expected Sep 2026)</span>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Data Analyst Specialist</h3>
+                    <span>DEPI, MCIT Egypt (2024)</span>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Commerce (Accounting)</h3>
+                    <span>Suez Canal University (2016 - 2020)</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2 class="heading" data-aos="fade-up"><span class="lang-en">Client <span>Feedback</span></span><span class="lang-ar">آراء <span>العملاء</span></span></h2>
+        <div class="testimonials-grid" data-aos="fade-up">
+            <div class="testi-card">
+                <i class="fas fa-quote-right quote-icon"></i>
+                <p class="lang-en">"Ahmed Matter is an exceptional Excel trainer. During his sessions, I was particularly impressed by his deep knowledge of advanced Excel functionalities and his ability to demonstrate practical applications for real-world scenarios. He doesn't just teach the 'how,' but also the 'why,' empowering you to problem-solve effectively. Ahmed's clear explanations and engaging teaching style make even the most intricate Excel challenges seem manageable. I confidently recommend him to anyone looking to master Excel for data analysis, reporting, or automation."</p>
+                <p class="lang-ar">"أحمد مطر مدرب إكسيل استثنائي. خلال جلساته التدريبية، أبهرتني معرفته العميقة بالخصائص المتقدمة لبرنامج إكسيل وقدرته على تطبيقها عمليًا في سيناريوهات واقعية. فهو لا يكتفي بشرح "كيفية" التنفيذ فحسب، بل يوضح أيضًا "السبب"، مما يمنحك القدرة على حل المشكلات بفاعلية. بفضل أسلوبه الشائق وشروحاته الواضحة، أصبحت أكثر تحديات الإكسيل تعقيدًا تبدو بسيطة ومقدورًا عليها. أوصي به بثقة تامة لأي شخص يتطلع لإتقان الإكسيل في مجالات تحليل البيانات، إعداد التقارير، أو الأتمتة."</p>
+                <div class="testi-author">
+                    <h4>Branch Operations Officer</h4>
+                    <span>Banking Institution</span>
+                </div>
+            </div>
+            <div class="testi-card">
+                <i class="fas fa-quote-right quote-icon"></i>
+                <p class="lang-en">"I wholeheartedly recommend Ahmed Matter as an Excel trainer. I had the privilege of attending his training, and what truly sets Ahmed apart is his focus on practical application. He doesn't just teach features; he teaches you how to leverage Excel to streamline your work, automate tasks, and gain deeper insights. His guidance directly translated into increased efficiency for me. If you're looking to transform your Excel skills into a powerful tool for productivity, Ahmed is the trainer you need."</p>
+                <p class="lang-ar">"أوصي بأحمد مطر من كل قلبي كمدرب إكسيل. لقد حظيت بشرف حضور دورته التدريبية، وما يميزه بحق هو تركيزه على التطبيق العملي؛ فهو لا يكتفي بشرح الميزات والخصائص، بل يعلمك كيفية استغلال الإكسيل لتبسيط عملك، أتمتة المهام، واستخلاص رؤى تحليلية أعمق. لقد انعكس توجيهه بشكل مباشر على زيادة كفاءتي في العمل. إذا كنت تتطلع لتحويل مهاراتك في الإكسيل إلى أداة قوية لزيادة الإنتاجية، فأحمد هو المدرب الذي تحتاجه بالتأكيد."</p>
+                <div class="testi-author">
+                    <h4>Team Manager</h4>
+                    <span>Banking Institution</span>
+                </div>
+            </div>
+            <div class="testi-card">
+                <i class="fas fa-quote-right quote-icon"></i>
+                <p class="lang-en">"Ahmed handled the Power BI and Excel work for our real estate data product, maintaining high data accuracy through his spreadsheets and dashboards to deliver clear analyses that supported project decisions, consistently providing reliable results that met both technical and business requirements, which is why I whole-heartedly recommend him for Power BI analyst and Excel trainer roles."</p>
+                <p class="lang-ar">"تولى أحمد إدارة أعمال Power BI و Excel الخاصة بمنتج البيانات العقارية لدينا، حيث حافظ من خلال جداول البيانات ولوحات العرض التفاعلية على دقة البيانات وتوفير تحليلات واضحة دعمَت قرارات المشروع، مُقدّمًا عملًا متسقًا وموثوقًا يلبي المتطلبات الفنية واحتياجات العمل على حد سواء، ولهذا أوصي به بثقة لشغل وظائف محلل Power BI ومدرب Excel."</p>
+                <div class="testi-author">
+                    <h4>Manager</h4>
+                    <span>Real Estate Institute</span>
+                </div>
+            </div>
+        </div>
+        <!-- معرض صور التقييمات (الجديد) -->
+        <div class="feedback-gallery" data-aos="fade-up">
+            <h3><span class="lang-en">More Words of Trust</span><span class="lang-ar">المزيد من رسائل الثقة</span></h3>
+            <div class="feedback-slider-container">
+                <!-- أضف مسار صور السكرين شوت هنا -->
+                <img src="images/feedback/feedback1.jpg" alt="Client Feedback" class="f-slide active">
+                <img src="images/feedback/feedback2.jpg" alt="Client Feedback" class="f-slide">
+                <img src="images/feedback/feedback3.jpg" alt="Client Feedback" class="f-slide">
+                <img src="images/feedback/feedback4.jpg" alt="Client Feedback" class="f-slide">
+                <img src="images/feedback/feedback5.jpg" alt="Client Feedback" class="f-slide">
+                <img src="images/feedback/feedback6.jpg" alt="Client Feedback" class="f-slide">
+                <!-- أزرار التقليب -->
+                <button class="f-slider-btn f-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="f-slider-btn f-next"><i class="fas fa-chevron-right"></i></button>
+                
+                <!-- نقاط التقليب السفلية -->
+                <div class="f-dots">
+                    <span class="f-dot active" data-index="0"></span>
+                    <span class="f-dot" data-index="1"></span>
+                    <span class="f-dot" data-index="2"></span>
+                    <span class="f-dot" data-index="3"></span>
+                    <span class="f-dot" data-index="4"></span>
+                    <span class="f-dot" data-index="5"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community & Video Feed Section -->
+    <section id="community" class="community">
+        <h2 class="heading" data-aos="fade-up"><span class="lang-en">Community & <span>Education</span></span><span class="lang-ar">المجتمع و <span>المحتوى</span></span></h2>
+        
+        <div class="community-layout" data-aos="fade-up">
+            <div class="brand-box">
+                <h3>Data Matters by Ahmed Matter</h3>
+                <p class="lang-en">Dedicated to empowering accountants and data enthusiasts. I create educational video content focused on Excel data cleaning, accounting automation, and financial reporting workflows.</p>
+                <p class="lang-ar">مكرس لتمكين المحاسبين والمهتمين بالبيانات. أقوم بإنشاء محتوى فيديو تعليمي يركز على تنظيف البيانات في Excel، أتمتة العمليات المحاسبية، وتدفقات عمل التقارير المالية.</p>
+                
+                <a href="https://www.facebook.com/share/g/183PorfArd/" target="_blank" class="btn" style="margin-top: 20px;">
+                    <!-- <i class="fab fa-linkedin"></i> -->
+                     <span class="lang-en">Follow for Updates</span><span class="lang-ar">تابعني للمزيد</span>
+                </a>
+            </div>
+            
+            <div class="video-grid">
+                <div class="video-wrapper">
+                    <a href="https://youtu.be/-IGLcyvVgZs?si=q1VdQD87L2uTt__Z" target="_blank" class="video-link">
+                        <img src="images/youtube/Sumif.png" alt="Grouping Functions Tutorial" class="video-thumbnail">
+                        <i class="fab fa-youtube play-icon"></i>
+                    </a>
+                </div>
+                <div class="video-wrapper">
+                    <a href="https://youtu.be/E1hDbyZJvoQ?si=IV0X3R2r_TRn4bqy" target="_blank" class="video-link">
+                        <img src="images/youtube/Lookup.png" alt="Lookup Functions Tutorial" class="video-thumbnail">
+                        <i class="fab fa-youtube play-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="heading" data-aos="fade-up"><span class="lang-en">Contact <span>Me</span></span><span class="lang-ar">تواصل <span>معي</span></span></h2>
+        
+        <div class="contact-container" data-aos="zoom-in">
+            <div class="contact-info-panel">
+                <h3 class="lang-en">Let's Work Together</h3>
+                <h3 class="lang-ar">لنتعاون معاً</h3>
+                <p class="lang-en">I am currently available for freelance projects, corporate training, and full-time opportunities. Feel free to reach out!</p>
+                <p class="lang-ar">أنا متاح حالياً لمشاريع العمل الحر، التدريب المؤسسي، والفرص الوظيفية بدوام كامل. لا تتردد في التواصل!</p>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> ahmedmatter.ba@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +20 1228607239</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Ismailia, Egypt</li>
+                </ul>
+            </div>
+            
+            <form id="contact-form" action="https://formspree.io/f/mrpzvajo" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name / الاسم" required class="input-field">
+                <input type="email" name="email" placeholder="Your Email / البريد الإلكتروني" required class="input-field">
+                <textarea name="message" rows="5" placeholder="How can I help you? / كيف يمكنني مساعدتك؟" required class="input-field"></textarea>
+                <button type="submit" class="btn">
+                    <span class="lang-en">Send Message</span><span class="lang-ar">إرسال الرسالة</span>
+                </button>
+                <p id="contact-status" style="display: none; color: #25d366; margin-top: 15px; font-weight: bold; text-align: center;"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="contact" style="padding-top: 0;">
+        <div class="contact-container" data-aos="fade-up" style="max-width: 600px; text-align: center; display: block;">
+            <h2 class="heading" style="font-size: 35px; margin-bottom: 20px;"><span class="lang-en">Rate My <span>Services</span></span><span class="lang-ar">تقييم <span>الخدمات</span></span></h2>
+            <p style="color: var(--text-muted); margin-bottom: 25px;"><span class="lang-en">Your feedback helps me improve!</span><span class="lang-ar">رأيك يهمني جداً لتطوير أعمالي!</span></p>
+            
+            <form id="feedback-form" action="https://formspree.io/f/mrpzvajo" method="POST" class="contact-form">
+                <div class="star-rating" style="margin-bottom: 20px; font-size: 30px; color: #555; direction: rtl; display: inline-flex;">
+                    <input type="radio" id="star5" name="rating" value="5" style="display: none;"><label for="star5" class="fas fa-star" style="cursor: pointer; transition: 0.2s;"></label>
+                    <input type="radio" id="star4" name="rating" value="4" style="display: none;"><label for="star4" class="fas fa-star" style="cursor: pointer; transition: 0.2s;"></label>
+                    <input type="radio" id="star3" name="rating" value="3" style="display: none;"><label for="star3" class="fas fa-star" style="cursor: pointer; transition: 0.2s;"></label>
+                    <input type="radio" id="star2" name="rating" value="2" style="display: none;"><label for="star2" class="fas fa-star" style="cursor: pointer; transition: 0.2s;"></label>
+                    <input type="radio" id="star1" name="rating" value="1" style="display: none;" required><label for="star1" class="fas fa-star" style="cursor: pointer; transition: 0.2s;"></label>
+                </div>
+
+                <input type="text" name="name" placeholder="Your Name / الاسم (Optional)" class="input-field">
+                <textarea name="feedback_message" rows="3" placeholder="Tell me what you think... / ما رأيك في أعمالي؟" required class="input-field"></textarea>
+                <button type="submit" class="btn" style="margin-top: 15px;">
+                    <span class="lang-en">Submit Feedback</span><span class="lang-ar">إرسال التقييم</span>
+                </button>
+                <p id="feedback-status" style="display: none; color: #25d366; margin-top: 15px; font-weight: bold; text-align: center;"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ahmed Matter. All Rights Reserved.</p>
+        <!-- Back to Top Button -->
+        <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+        
+    </footer>
+
+    <!-- Floating Data Quotes Widget -->
+    <div class="quote-widget-container">
+        <button id="toggle-quote-btn" class="toggle-quote-btn" title="Data Insights">
+            <i class="fas fa-lightbulb"></i>
+        </button>
+        <div id="quote-popup" class="quote-popup">
+            <button id="close-quote-btn" class="close-quote-btn">&times;</button>
+            <i class="fas fa-quote-left quote-icon-popup"></i>
+            <div class="quote-content-popup">
+                <p id="popup-text" class="popup-text"></p>
+                <h4 id="popup-author" class="popup-author"></h4>
+                <div class="popup-example">
+                    <strong id="popup-label"></strong>
+                    <span id="popup-example-text"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Details Modal -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content" style="max-width: 600px; height: auto; padding: 40px; text-align: center;">
+            <span class="close-btn" id="close-service-btn">&times;</span>
+            <i class="fas fa-briefcase" style="font-size: 50px; color: var(--main-color); margin-bottom: 20px;"></i>
+            <h3 id="serv-modal-title" style="color: var(--heading-color); font-size: 26px; margin-bottom: 20px;"></h3>
+            <p id="serv-modal-desc" style="color: var(--text-muted); font-size: 16px; line-height: 1.8; margin-bottom: 30px;"></p>
+            <a href="#contact" class="btn" id="request-service-btn">
+                <span class="lang-en">Request This Service</span><span class="lang-ar">اطلب هذه الخدمة</span>
+            </a>
+        </div>
+    </div>
+
+<!-- Enhanced Case Study Modal -->
+    <div id="dashboard-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-dashboard-btn">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-iframe-container" id="modal-iframe-container"></div>
+                <div class="modal-info-container">
+                    <h3><span class="lang-en" id="modal-title-en">Project Title</span><span class="lang-ar" id="modal-title-ar">عنوان المشروع</span></h3>
+                    <div class="case-study-block">
+                        <h4><i class="fas fa-exclamation-triangle"></i> <span class="lang-en">The Problem</span><span class="lang-ar">المشكلة</span></h4>
+                        <p><span class="lang-en" id="modal-prob-en"></span><span class="lang-ar" id="modal-prob-ar"></span></p>
+                    </div>
+                    <div class="case-study-block">
+                        <h4><i class="fas fa-lightbulb"></i> <span class="lang-en">The Solution</span><span class="lang-ar">الحل</span></h4>
+                        <p><span class="lang-en" id="modal-sol-en"></span><span class="lang-ar" id="modal-sol-ar"></span></p>
+                    </div>
+                    <div class="case-study-block">
+                        <h4><i class="fas fa-chart-line"></i> <span class="lang-en">The Impact</span><span class="lang-ar">النتيجة والأثر</span></h4>
+                        <p><span class="lang-en" id="modal-imp-en"></span><span class="lang-ar" id="modal-imp-ar"></span></p>
+                    </div>
+                    
+                    <!-- زر التحميل الذكي الجديد -->
+                    <a href="#" download id="modal-download-btn" class="btn" style="display: none; margin-top: 20px; width: 100%; text-align: center; justify-content: center; gap: 10px;">
+                        <i class="fas fa-download"></i>
+                        <span class="lang-en">Download Project File</span>
+                        <span class="lang-ar">تحميل ملف المشروع</span>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
