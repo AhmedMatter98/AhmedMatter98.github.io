@@ -604,6 +604,9 @@ body[lang="ar"] .quote-widget-container { right: auto; left: 30px; align-items: 
 }
 body[lang="ar"] .quote-popup { right: auto; left: 0; transform: translateX(-120%) scale(0.9); }
 .quote-popup.show { opacity: 1; visibility: visible; transform: translateX(0) scale(1); }
+body[lang="ar"] .quote-popup.show { transform: translateX(0) scale(1) !important; }
+
+
 
 .close-quote-btn { position: absolute; top: 10px; right: 15px; background: transparent; border: none; color: var(--text-muted); font-size: 24px; cursor: pointer; transition: 0.3s; }
 body[lang="ar"] .close-quote-btn { right: auto; left: 15px; }
