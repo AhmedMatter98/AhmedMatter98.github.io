@@ -315,6 +315,8 @@ if(document.getElementById('particles-js')) {
     });
 }
 
+
+
 // 10. Dynamic Floating Quotes Logic
 const quotesData = [
     {
@@ -333,7 +335,7 @@ const quotesData = [
 
 let currentQuoteIndex = 0;
 let quoteInterval;
-let isQuoteEnabled = true; 
+let isQuoteEnabled = false; // التعديل الأول: خلينا الحالة الافتراضية مقفولة
 
 const quotePopup = document.getElementById('quote-popup');
 const toggleQuoteBtn = document.getElementById('toggle-quote-btn');
@@ -371,17 +373,11 @@ function showNextQuote() {
     }, 500); 
 }
 
-function startQuotes() {
-    if (!isQuoteEnabled) return;
-    renderQuote();
-    quotePopup.classList.add('show');
-    
-    setTimeout(() => { quotePopup.classList.remove('show'); }, 7000);
-    
-    quoteInterval = setInterval(showNextQuote, 12000);
-}
-
 if(popupCloseBtn && toggleQuoteBtn) {
+    // التعديل الثاني: إعطاء اللمبة شكل "مطفي" من البداية
+    toggleQuoteBtn.classList.add('muted');
+    toggleQuoteBtn.title = "Enable Data Insights";
+
     popupCloseBtn.addEventListener('click', () => {
         quotePopup.classList.remove('show');
     });
@@ -389,11 +385,19 @@ if(popupCloseBtn && toggleQuoteBtn) {
     toggleQuoteBtn.addEventListener('click', () => {
         isQuoteEnabled = !isQuoteEnabled;
         if (isQuoteEnabled) {
+            // لما العميل يدوس عليها يفتحها
             toggleQuoteBtn.classList.remove('muted');
             toggleQuoteBtn.title = "Disable Data Insights";
-            showNextQuote();
+            
+            // إظهار أول مقولة فورا
+            renderQuote();
+            quotePopup.classList.add('show');
+            setTimeout(() => { quotePopup.classList.remove('show'); }, 7000);
+            
+            // تشغيل التايمر للمقولات اللي بعدها
             quoteInterval = setInterval(showNextQuote, 12000);
         } else {
+            // لما يدوس عليها عشان يقفلها
             toggleQuoteBtn.classList.add('muted');
             toggleQuoteBtn.title = "Enable Data Insights";
             quotePopup.classList.remove('show');
@@ -401,7 +405,7 @@ if(popupCloseBtn && toggleQuoteBtn) {
         }
     });
 
-    setTimeout(startQuotes, 3000);
+    // التعديل الثالث: مسحنا دالة (startQuotes) والـ setTimeout اللي كانت بتشغلها تلقائي أول ما الموقع يفتح
 }
 
 // 11. Formspree AJAX Submission (No Redirect)
